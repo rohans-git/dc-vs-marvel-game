@@ -34,12 +34,12 @@ Shooting directly to the sheilds you protect your immunity. It takes one shoot t
 
 ## User Interface: What are the main screens: HomePage
 
-****** First screen shows: ******
+### First screen shows:
 - Name of the game <DC VS MARVEL>
 - Instructions of the game
 - A START button
 
---- once START is pressed --------->
+#### Once START is Pressed --------->
 
 ### Second screen shows: Main Game Area
 
