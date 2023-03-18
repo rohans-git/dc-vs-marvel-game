@@ -32,9 +32,9 @@ Move left (left arrow), move right (right arrow), shoot up (space bar) and P to 
 Shooting directly to the sheilds you protect your immunity. It takes one shoot to destroy the sheild. Each sheild kill makes the player's immunity grows. 
 
 
-## User Interface: What are the main screens: HomePage
+## User Interface: What are the main screens?
 
-### First screen shows:
+### First screen shows:Home Page
 - Name of the game <DC VS MARVEL>
 - Instructions of the game
 - A START button
