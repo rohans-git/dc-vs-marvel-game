@@ -1,0 +1,346 @@
+body {
+  width: 100%;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url("/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/dc vs marvel.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  animation: slideBg 10s infinite alternate;
+  transition: background 1s ease-in-out;
+}
+
+@keyframes slideBg {
+  0% {
+    background-position: 10 10;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+body:hover {
+  background: linear-gradient(135deg, #060606, #060606);
+}
+
+
+header {
+  margin-top: 0.1%;
+  text-align: center;
+  height: 5px;
+  margin-bottom: 0.1%;
+  transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+  background-color: #030303;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+h1 {
+  font-family: "nordic light";
+  color: #f0d90d;
+  font-size: 50px;
+  text-shadow: 3px 3px #266e43;
+}
+
+.shake {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.content-wrapper {
+  margin-top: 50;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#play-music img {
+  width: 30px;
+}
+
+#play-music:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.game-intro {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin-top: 7%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.arrows-img {
+  width: 100px;
+}
+
+.space-img {
+  height: 25px;
+}
+
+#start-button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url("../images/start.png");
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+#restart-button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url("../images/restart-button.png");
+  background-size: cover;
+  z-index: 1;
+}
+
+#start-button:hover,
+#restart-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.instructions {
+  color: white;
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  font-weight: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(8, 8, 8, 0.8);
+  color: #f0d90d;
+  border: 1px solid ;
+  border-radius: 15%;
+}
+
+.arrow-wrap {
+  width: 130px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+canvas {
+  background-color: #fffff0;
+  border: 3px solid black;
+}
+
+footer {
+  margin: 1%;
+  color: white;
+  font-family: "Play", sans-serif;
+}
+
+footer a {
+  color: #d03232;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Animations and 
+Effects */
+
+button:hover,
+a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.game-intro {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#start-button {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#restart-button {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.arrow-wrap {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s forwards;
+}
+
+.space-wrap {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s forwards 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+footer a:hover {
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 5px rgba(208, 50, 50, 0.8);
+}
+
+
+#timer {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: auto;
+  color: #d03232;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px; /* reduce padding */
+  position: fixed;
+  bottom: 0; /* move to bottom */
+  width: 50%;
+  z-index: 9999;
+}
+
+.banner h2 {
+  font-size: 24px; /* reduce font size */
+  margin: 0;
+}
+
+.banner label {
+  font-size: 24px; /* reduce font size */
+}
+
+.banner input[type="text"] {
+  font-size: 14px; /* reduce font size */
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.banner button {
+  font-size: 14px; /* reduce font size */
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+

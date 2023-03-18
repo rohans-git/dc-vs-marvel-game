@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Primary Meta Tags -->
+    <title>DC VS MARVEL: Who Owns the Universe?</title>
+    <meta name="title" content="DC VS MARVEL: Who Owns the Universe?" />
+    <meta
+      name="description"
+      content="Get ready for the ultimate battle of the comic book titans in DC vs Marvel: Who Owns the Universe?"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content=""
+    />
+    <meta property="og:title" content="DC vs Marvel" />
+    <meta
+      property="og:description"
+      content="Get ready for the ultimate battle of the comic book titans in DC vs Marvel: Who Owns the Universe?"
+    />
+    <meta
+      property="og:image"
+      content=""
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="" />
+    <meta
+      property="twitter:url"
+      content=""
+    />
+    <meta property="twitter:title" content="DC vs Marvel" />
+    <meta
+      property="twitter:description"
+      content="Get ready for the ultimate battle of the comic book titans in DC vs Marvel: Who Owns the Universe?"
+    />
+    <meta
+      property="twitter:image"
+      content=""
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <title>DC vs Marvel</title>
+  </head>
+
+  <body>
+
+  <div class="banner" id="popup">
+    <button class="close" id="close">&times;</button>
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" required />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+
+
+    <header>
+      <h1 class="shake">DC vs Marvel: Who Owns the Universe?</h1>
+
+    </header>
+    <div class="content-wrapper">
+      <div class="game-intro">
+        <span id="play-music" title="Play Music"></span>
+        <span class="restart"></span>
+        <div class="instructions">
+          <p>Witness the ultimate clash of two superhero icons as Batman takes on Captain America in a battle for the ages, 
+            pitting brains against brawn and Gotham against New York. Who will emerge victorious in this epic showdown?</p>
+          <p
+            >Use the LEFT and RIGHT arrow to navigate and use
+            SPACE to shoot DESTROY the sheilds! Use P to pause the game.</p
+          >
+          <div class="arrow-wrap">
+            <img
+              src="images/arrow-keys.png"
+              alt="arrow keys"
+              class="arrows-img"
+            />
+          </div>
+          <div class="space-wrap">
+            <img
+              src="images/icon_keyboard_spacebar..png"
+              alt="space bar"
+              class="space-img"
+            />
+          </div>
+          <p
+            >Avoid contact with the shield as it will reduce 
+            your power, and eventually lose if your immunity dies.</p
+          >
+          <p
+            >When you level up, you might see power-ups appearing.
+            Capture them to boost your gameplay experience.
+            You win the game when you reach 500 points.</p
+          >
+
+          <button id="start-button"></button>
+        </div>
+      </div>
+
+      
+
+      <div id="game-board"> </div>
+      <div id="timer">00:00</div>
+      
+    </div>
+
+    <footer>
+      <span
+        >This game has been created by
+        <a href="https://github.com/rohans-git" target="_blank">Rohan</a>
+      </span></footer
+    >
+    <script src="./src/master.js"></script>
+  </body>
+</html>
