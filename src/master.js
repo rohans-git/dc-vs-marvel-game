@@ -29,7 +29,7 @@ showBanner();
 ///index///
 
 let player, canvas, ctx;
-let backGroundMusic = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman.mp3`);
+let backGroundMusic = new Sound(`../sound-effects/batman.mp3`);
 
 const startButton = document.getElementById('start-button');
 const playMusic = document.querySelector('#play-music');
@@ -104,23 +104,23 @@ const myGameArea = {
         gameBoard.appendChild(this.canvas);
         this.interval = setInterval(updateGameScreen, 10);
         this.frameNo = 0;
-        this.powerSound = new Sound('/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman-return-of-the-joker-sfx-15.mp3');
+        this.powerSound = new Sound('../sound-effects/batman-return-of-the-joker-sfx-15.mp3');
         this.cleanSound = new Sound(`../sound-effects/clean-effect.mp3`);
         this.fallSound = new Sound(`../sound-effects/fall-plop.mp3`);
-        this.screamSound = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/1.mp3`);
+        this.screamSound = new Sound(`../sound-effects/1.mp3`);
         this.warningSound = new Sound(`../sound-effects/tun-tun-tunn-effect.mp3`);
         this.gameOverSound = new Sound(`../sound-effects/dyingheartbeat.mp3`);
         this.levelUpSound = new Sound(`../sound-effects/level-up-effect.mp3`)
         this.winSound = new Sound(`../sound-effects/winSound.mp3`)
-        this.coinCatch = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman-return-of-the-joker-sfx-6.mp3`)
-        this.coinBreak = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman-return-of-the-joker-sfx-15.mp3`)
-        this.moneyCatch = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman-return-of-the-joker-sfx-6.mp3`)
-        this.moneyBreak = new Sound(`/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/batman-return-of-the-joker-sfx-15.mp3`)
+        this.coinCatch = new Sound(`../sound-effects/batman-return-of-the-joker-sfx-6.mp3`)
+        this.coinBreak = new Sound(`../sound-effects/batman-return-of-the-joker-sfx-15.mp3`)
+        this.moneyCatch = new Sound(`../sound-effects/batman-return-of-the-joker-sfx-6.mp3`)
+        this.moneyBreak = new Sound(`../sound-effects/batman-return-of-the-joker-sfx-15.mp3`)
     },
 
     clear: function () {
         let img = new Image();
-        img.src = '/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/background-option.jpeg';
+        img.src = '../images/background-option.jpeg';
         ctx.drawImage(img, 0, 0, this.canvas.width, this.canvas.height);
     },
     stop: function () {
@@ -143,7 +143,6 @@ function restartButton() {
         player = new Player();
         myGameArea.start();
         resetTimer();
-        startTimer();
         restartButton.innerHTML = ``;
     });
 }
@@ -175,7 +174,7 @@ function updateSheild() {
         this.width = 60;
         this.height = 60;
         let img = new Image();
-        img.src = `/Users/rohaan.kumar/Desktop/IH/Project_Game - DC VS Marvel/images/sheild.png`;
+        img.src = `../images/sheild.png`;
         ctx.drawImage(img, oneSheilds.x, oneSheilds.y, this.width, this.height);
 
         if (oneSheilds.y > 500) {
@@ -242,7 +241,7 @@ class Player {
 
     update() {
         let img = new Image();
-        img.src = `/Users/rohaan.kumar/Desktop/IH/Project_Game - DC VS Marvel/images/player.png`;
+        img.src = `../images/player.png`;
         ctx.drawImage(img, this.x, this.y, this.width, this.height);
     }
 
@@ -310,7 +309,7 @@ function updateExtraRefills() {
         this.width = 30;
         this.height = 50;
         let img = new Image();
-        img.src = `/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/Batcoin.png`;
+        img.src = `../images/Batcoin.png`;
         ctx.drawImage(img, oneMoney.x, oneMoney.y, this.width, this.height);
 
         if (oneMoney.y > 500) {
@@ -374,7 +373,7 @@ class Power {
 
     update() {
         let img = new Image();
-        img.src = `/Users/rohaan.kumar/Desktop/IH/Project_Game - DC VS Marvel/images/power.png`;
+        img.src = `../images/power.png`;
         ctx.drawImage(img, this.x, this.y, this.width, this.height);
     }
 
@@ -567,7 +566,7 @@ function updateCoins() {
         this.width = 50;
         this.height = 50;
         let img = new Image();
-        img.src = `/Users/rohaan.kumar/Desktop/IH/Project_Game - DC VS Marvel/images/coins.png`;
+        img.src = `../images/coins.png`;
         ctx.drawImage(img, oneCoin.x, oneCoin.y, this.width, this.height);
 
         if (oneCoin.y > 500) {
@@ -616,7 +615,7 @@ function shootCoin() {
 
 let explosionSpriteSheet;
 function preload() {
-    explosionSpriteSheet = loadImage('/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/kisspng-sprite-video-games-pixel-art-explosion-collection-of-free-explosions-transparent-white-ba-5cb55249492941.1959240415553869532997.png');
+    explosionSpriteSheet = loadImage('../images/kisspng-sprite-video-games-pixel-art-explosion-collection-of-free-explosions-transparent-white-ba-5cb55249492941.1959240415553869532997.png');
 }
 
 
@@ -645,10 +644,10 @@ function createExplosion(x, y) {
 
 // Image rotation ///
 const images = [
-  "/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/dc vs marvel.jpeg",
-  "/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/marvel-vs-dc-4k-iu-1600x900.jpeg",
-  "/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/6.dc-vs-marvel-heroes-5k-13.jpg",
-  "/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/18.wp9781775.jpg"
+  "../images/dc vs marvel.jpeg",
+  "../images/marvel-vs-dc-4k-iu-1600x900.jpeg",
+  "../images/6.dc-vs-marvel-heroes-5k-13.jpg",
+  "../images/18.wp9781775.jpg"
 ];
 
 let index = 0;
@@ -664,14 +663,10 @@ setInterval(changeBackground, 2000);
 
 // timer 
 
-// Add this code block to your JavaScript file
 let timer;
 let timeInSeconds = 0;
 
 function startTimer() {
-    timeInSeconds = 0;
-    // Load the previous time from localStorage if it exists
-    timeInSeconds = localStorage.getItem("timeInSeconds") ? parseInt(localStorage.getItem("timeInSeconds")) : 0;
     
     timer = setInterval(function () {
         timeInSeconds++;
@@ -725,14 +720,12 @@ function resetTimer() {
 /// Home Page Music ///
 
 window.addEventListener('load', () => {
-  const audio = new Audio('/Users/rohaan.kumar/Desktop/DC-VS-Marvel/sound-effects/superhero-intro-111393.mp3');
+  const audio = new Audio('../sound-effects/superhero-intro-111393.mp3');
   audio.volume = 1;
   audio.loop = true;
   audio.play();
 });
 
 
-/* Confetti
-Effect */
 
 

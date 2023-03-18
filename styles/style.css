@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url("/Users/rohaan.kumar/Desktop/DC-VS-Marvel/images/dc vs marvel.jpeg");
+  background-image: url("../images/dc vs marvel.jpeg");
   background-size: cover;
   background-attachment: fixed;
   animation: slideBg 10s infinite alternate;
