@@ -4,13 +4,11 @@
 First Ironhack project, a game using canvas HTML 
 
 
+## Concept of the game
 
+The user has to protect/dodge themself from the DC/Marvel characters that are coming from above. They can collect zaps to recover or win points and shoot the other characters.
 
-//Describe the concept of the game ---
-
-the user has to protect/dodge themself from the DC/Marvel characters that are coming from above. They can collect zaps to recover or win points and shoot the other characters.
-
-// Describe components ---
+## Components of the Game
 
 There are obstacles and zaps to shoot them. On the bottom there is a player. A score bar with the level of points.
 
