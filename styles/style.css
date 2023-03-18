@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url("../images/dc vs marvel.jpeg");
+  background-image: url("images/dc vs marvel.jpeg");
   background-size: cover;
   background-attachment: fixed;
   animation: slideBg 10s infinite alternate;
@@ -98,7 +98,7 @@ h1 {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-image: url("../images/start.png");
+  background-image: url("images/start.png");
   background-size: cover;
   margin-bottom: 20px;
 }
@@ -107,7 +107,7 @@ h1 {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-image: url("../images/restart-button.png");
+  background-image: url("images/restart-button.png");
   background-size: cover;
   z-index: 1;
 }
