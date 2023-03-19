@@ -1,7 +1,7 @@
 # Project-1-DC-VS-MARVEL-game
 
 
-First Ironhack project, a game using canvas HTML 
+First Ironhack project, a game using canvas HTML. Play it now, play it here: https://rohans-git.github.io/dc-vs-marvel-game/
 
 ## Concept of the game
 
