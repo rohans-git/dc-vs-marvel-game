@@ -174,7 +174,7 @@ function updateSheild() {
         this.width = 60;
         this.height = 60;
         let img = new Image();
-        img.src = `/images/sheild.png`;
+        img.src = `images/sheild.png`;
         ctx.drawImage(img, oneSheilds.x, oneSheilds.y, this.width, this.height);
 
         if (oneSheilds.y > 500) {

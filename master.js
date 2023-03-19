@@ -47,7 +47,7 @@ startButton.addEventListener('click', function () {
     h1.classList.toggle('shake');
 
     backGroundMusic.play();
-    playMusic.innerHTML = `<img id='play-icon' src="./images/play-music.png" alt="play music icon">`;
+    playMusic.innerHTML = `<img id='play-icon' src="images/play-music.png" alt="play music icon">`;
 
     player = new Player();
     myGameArea.start();
@@ -58,10 +58,10 @@ playMusic.addEventListener('click', function () {
     let musicIconSrc = document.querySelector('#play-icon').src;
     if (musicIconSrc.includes(`play-music`)) {
         backGroundMusic.stop();
-        playMusic.innerHTML = `<img id='play-icon' src="./images/stop-music.png" alt="play music icon">`;
+        playMusic.innerHTML = `<img id='play-icon' src="images/stop-music.png" alt="play music icon">`;
     } else if (musicIconSrc.includes(`stop-music`)) {
         backGroundMusic.play();
-        playMusic.innerHTML = `<img id='play-icon' src="./images/play-music.png" alt="play music icon">`;
+        playMusic.innerHTML = `<img id='play-icon' src="images/play-music.png" alt="play music icon">`;
     }
 });
 
@@ -174,7 +174,7 @@ function updateSheild() {
         this.width = 60;
         this.height = 60;
         let img = new Image();
-        img.src = `/images/sheild.png`;
+        img.src = `images/sheild.png`;
         ctx.drawImage(img, oneSheilds.x, oneSheilds.y, this.width, this.height);
 
         if (oneSheilds.y > 500) {
